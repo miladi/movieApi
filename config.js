@@ -1,8 +1,8 @@
 const config = {
     user: 'milad87',
-    password: 'Ecutdbildning1',
+    password: 'Ecutbildning1',
     server: 'milad.database.windows.net',
-    database: 'WebShop'
+    database: 'movies'
 };
 
 module.exports = config;

@@ -10,7 +10,7 @@ app.options('*', cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const actorRouter = require('./routers/actorRouter');
+const actorRouter = require('./routers/actorRouter')();
 app.use('/api', actorRouter);
 
 app.server = app.listen(port, () => {

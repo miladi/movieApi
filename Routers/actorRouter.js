@@ -1,17 +1,17 @@
 const express = require('express');
-const actorController = require('../Controllers/actorsController');
+const actorsController = require('../controllers/actorsController');
 
 function routes() {
     const actorRouter = express.Router();
-    const controller = actorController();
+    const controller = actorsController();
 
     actorRouter.route('/actors')
         .get(controller.get);
 
     actorRouter.route('/actors/:Id')
-        .get(controller.get);
+        .get(controller.get)
 
     return actorRouter;
-}
+};
 
 module.exports = routes;
